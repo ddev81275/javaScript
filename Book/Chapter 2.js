@@ -1,3 +1,4 @@
+/*  2.4 */
 let i;
 let my_value;
 let _my_private_value;
