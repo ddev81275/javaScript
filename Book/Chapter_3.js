@@ -1,7 +1,9 @@
 function ShowObjValue(value) {
     console.log(Object.toString(value) + ': ' + value);
 }
-
+function PrintSeparator() {
+    console.log('------------------------');
+}
 /*  3.1   */
 let a = [1, 0, 12, 4];
 // a.sort();
@@ -43,7 +45,7 @@ const date = new Date();
 /*ShowObjValue(dateNow);
 ShowObjValue(date);*/
 
-console.log('------------------------');
+// console.log('------------------------');
 
 let greet = 
 'Hello \
@@ -56,5 +58,26 @@ const nissanModel = carModel.replace('125', '75');
 // console.log('nameOfCompany :>> ', nameOfCompany);
 // console.log('smile: ' + smileInUnicode);
 // console.log(greet);
-console.log(carModel);
-console.log(nissanModel);
+// console.log(carModel);
+// console.log(nissanModel);
+
+// console.log('------------------------');
+
+const modelYear = 2022;
+let car = `nissan ${modelYear}`;
+
+// console.log('car year: ' + car);
+
+PrintSeparator();
+let reg_ex_1 = /ab/;
+let reg_ex_2 = new RegExp('cd');
+
+// ShowObjValue(reg_ex_1);
+// ShowObjValue(reg_ex_2);
+
+let sentance = 'Hello man!';
+let symbolExample = Symbol('name');
+sentance[symbolExample] = 'Jhone';
+
+console.log(symbolExample);
+console.log(`sentance :${sentance}`);
