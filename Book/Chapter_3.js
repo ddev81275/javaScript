@@ -79,5 +79,21 @@ let sentance = 'Hello man!';
 let symbolExample = Symbol('name');
 sentance[symbolExample] = 'Jhone';
 
-console.log(symbolExample);
-console.log(`sentance :${sentance}`);
+// console.log(symbolExample);
+// console.log(`sentance :${sentance}`);
+PrintSeparator();
+let my_car = 'Hello Ray';
+const updated_car = my_car.toLocaleLowerCase();
+
+// console.log(my_car);
+// console.table(updated_car);
+
+let CarSkeleton = {
+    year: 1,
+    company: 'nissan',
+    model: 'X/124'
+};
+let CarSkeleton2 = CarSkeleton;
+// console.log(CarSkeleton);
+// console.table(CarSkeleton === CarSkeleton2);
+
