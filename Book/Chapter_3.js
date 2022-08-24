@@ -123,11 +123,13 @@ let [_a, _b] = [1, 2];
 const [_name, _sub_name, _year] = ['Tom', 'Cruise', 50];
 // const [_car, _car_model, _car_year, _car_owner, ..._car_info] = ['nissan', 'CV/12', 2022, 'Tommy', 'modern nissan, just do it man', 'diametr is 2.0 inch', 203697];
 const [_car, _car_model, , ..._car_info] = ['nissan', 'CV/12', 2022, 'Tommy', 'modern nissan, just do it man', 'diametr is 2.0 inch', 203697];
-const {sin, cos, tan} = Math; //only props of object Math
-
+const { sin, cos, tan } = Math; //only props of object Math
+const { cos: _cos, tan: _tan } = Math;
 // console.log([_a, _b]);
 [_a, _b] = [_b, _a];
 // console.log([_a, _b]);
 // console.log(_name, _sub_name, _year);
-console.log(_car_info);
-console.log('sint(10)' + sin(10));
+// console.log(_car_info);
+// console.log('sint(10)' + sin(10));
+// console.log(_cos(90));
+// console.log(_tan(90));
