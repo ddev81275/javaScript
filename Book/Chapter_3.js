@@ -1,3 +1,5 @@
+'use strict';
+
 function ShowObjValue(value) {
     console.log(Object.toString(value) + ': ' + value);
 }
@@ -77,7 +79,8 @@ let reg_ex_2 = new RegExp('cd');
 
 let sentance = 'Hello man!';
 let symbolExample = Symbol('name');
-sentance[symbolExample] = 'Jhone';
+// sentance[symbolExample] = 'Jhone'; 
+//TypeError in strict mode 
 
 // console.log(symbolExample);
 // console.log(`sentance :${sentance}`);
@@ -107,6 +110,10 @@ const object_template = {
     _class: 'exapmle class',
     _code: 125
 };
+
 for(const prop in object_template) {
     console.log(prop + ' = ' + object_template[prop]);
 }
+
+var global_value = 2;
+console.log(global_value);
