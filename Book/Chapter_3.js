@@ -49,8 +49,8 @@ ShowObjValue(date);*/
 
 // console.log('------------------------');
 
-let greet = 
-'Hello \
+let greet =
+    'Hello \
 User';
 const nameOfCompany = 'Hello Jh\'on!';
 const smileInUnicode = '\u{1F600}';
@@ -111,9 +111,23 @@ const object_template = {
     _code: 125
 };
 
-for(const prop in object_template) {
-    console.log(prop + ' = ' + object_template[prop]);
-}
+// for (const prop in object_template) {
+//     console.log(prop + ' = ' + object_template[prop]);
+// }
 
 var global_value = 2;
-console.log(global_value);
+// console.log(global_value);
+
+// Деструктурирующее присваивание
+let [_a, _b] = [1, 2];
+const [_name, _sub_name, _year] = ['Tom', 'Cruise', 50];
+// const [_car, _car_model, _car_year, _car_owner, ..._car_info] = ['nissan', 'CV/12', 2022, 'Tommy', 'modern nissan, just do it man', 'diametr is 2.0 inch', 203697];
+const [_car, _car_model, , ..._car_info] = ['nissan', 'CV/12', 2022, 'Tommy', 'modern nissan, just do it man', 'diametr is 2.0 inch', 203697];
+const {sin, cos, tan} = Math; //only props of object Math
+
+// console.log([_a, _b]);
+[_a, _b] = [_b, _a];
+// console.log([_a, _b]);
+// console.log(_name, _sub_name, _year);
+console.log(_car_info);
+console.log('sint(10)' + sin(10));
