@@ -97,3 +97,16 @@ let CarSkeleton2 = CarSkeleton;
 // console.log(CarSkeleton);
 // console.table(CarSkeleton === CarSkeleton2);
 
+const color = 'white', size = 'S';
+const my_const = color + size;
+// console.log(`my const value: ${my_const}`);
+// console.log('color: ' + color);
+
+const object_template = {
+    _name: 'custom object',
+    _class: 'exapmle class',
+    _code: 125
+};
+for(const prop in object_template) {
+    console.log(prop + ' = ' + object_template[prop]);
+}
