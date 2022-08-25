@@ -41,14 +41,3 @@ let is_false = false;
 // is_true &&= is_false;
 is_true ||= is_false;
 // console.log(is_true);
-
-const numberForIf = 10;
-if (numberForIf === 10) {
-    console.log(10);
-}
-else if (numberForIf > 10) {
-    console.log('number >' + numberForIf);
-}
-else {
-    console.log('else block');
-}
