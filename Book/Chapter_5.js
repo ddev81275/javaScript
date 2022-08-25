@@ -85,12 +85,22 @@ let _custom_obj = {
 // }
 // console.table(_stringObj);
 
-const _text = 'Ha ha ha ha na nu Batman!';
-// const _text = 'Ha ha ha ha Batman!';
-const _set = new Set(_text.split(' '));
-const _unique = [];
+// const _text = 'Ha ha ha ha na nu Batman!';
+// // const _text = 'Ha ha ha ha Batman!';
+// const _set = new Set(_text.split(' '));
+// const _unique = [];
 
-for (const iterator of _set) {
-    _unique.push(iterator)
+// for (const iterator of _set) {
+//     _unique.push(iterator)
+// }
+// console.log(_unique);
+
+const _map = new Map(
+    [
+        [1, 'hello'],
+        ['2', 9484],
+        [3, 'fsldajfl']
+    ]);
+for (const [key, value] of _map) {
+    console.table(key + ': ' + value);
 }
-console.log(_unique);
