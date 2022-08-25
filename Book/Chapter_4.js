@@ -33,3 +33,4 @@ const _third = [_first, 1, 2, [7878, 8989]];
 
 console.log(_third[0].name);
 // console.log(_third[8].name); // TypeError: Cannot read properties of undefined (reading 'name')
+console.log(_third[8]?.name); // undefiend
