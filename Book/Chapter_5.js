@@ -43,7 +43,7 @@ const numberForIf = 10;
 console.log('--------------------\nfor of');
 const _forOfArray = [1, 2, 3, 4, 5, 6, 12, 78, 100];
 let sumForOf = 0;
-for (const iterator of _forOfArray) {
+for (const iterator of _forOfArray) { //for array, with Object for/in
     sumForOf += iterator;
 }
 console.log(typeof (sumForOf));
