@@ -9,16 +9,34 @@ const numberForIf = 10;
 //     console.log('else block');
 // }
 // switch
-console.log('\n----------------------\nswitch case');
-const key = 12;
-switch (key) {
-    case 12:
-        console.log('key ' + key);
-        break;
-    case 12:
-        console.log(12);
-        break;
-    default:
-        console.log('def case');
-        break;
+// console.log('\n----------------------\nswitch case');
+// const key = 12;
+// switch (key) {
+//     case 12:
+//         console.log('key ' + key);
+//         break;
+//     case 12:
+//         console.log(12);
+//         break;
+//     default:
+//         console.log('def case');
+//         break;
+// }
+
+// console.log('--------------------\nwhile');
+// let _whileCounter = 0;
+// while (_whileCounter < 10) {
+//     console.log(_whileCounter);
+//     _whileCounter++;
+// }
+console.log('--------------------\nfor');
+for (let iter = 1; iter < 12; iter = iter + 2) {
+    console.log(iter);
 }
+
+let i, j, sum = 0;
+for (i = 0, j = 0; i < 10; i++, j++) {
+    sum += i * j;
+    console.log(sum);
+}
+console.log('summa =' + sum);
