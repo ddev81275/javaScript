@@ -74,13 +74,23 @@ let _custom_obj = {
 //     console.table(iterator);
 // }
 
-let _stringObj = {};
-for (const letter of 'object') {
-    if (_stringObj[letter]) {
-        _stringObj[letter]++;
-    }
-    else {
-        _stringObj[letter] = 1;
-    }
+// let _stringObj = {};
+// for (const letter of 'object') {
+//     if (_stringObj[letter]) {
+//         _stringObj[letter]++;
+//     }
+//     else {
+//         _stringObj[letter] = 1;
+//     }
+// }
+// console.table(_stringObj);
+
+const _text = 'Ha ha ha ha na nu Batman!';
+// const _text = 'Ha ha ha ha Batman!';
+const _set = new Set(_text.split(' '));
+const _unique = [];
+
+for (const iterator of _set) {
+    _unique.push(iterator)
 }
-console.table(_stringObj);
+console.log(_unique);
