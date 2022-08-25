@@ -40,11 +40,36 @@ const numberForIf = 10;
 //     console.log(sum);
 // }
 // console.log('summa =' + sum);
-console.log('--------------------\nfor of');
-const _forOfArray = [1, 2, 3, 4, 5, 6, 12, 78, 100];
-let sumForOf = 0;
-for (const iterator of _forOfArray) { //for array, with Object for/in
-    sumForOf += iterator;
+// console.log('--------------------\nfor of');
+// const _forOfArray = [1, 2, 3, 4, 5, 6, 12, 78, 100];
+// let sumForOf = 0;
+// for (const iterator of _forOfArray) { //for array, with Object for/in
+//     sumForOf += iterator;
+// }
+// console.log(typeof (sumForOf));
+// console.log(sumForOf);
+console.log('--------------------\nfor/in');
+let _custom_obj = {
+    name: 'custom name',
+    year: 2022,
+    model: 'VC/75'
+};
+
+// // for/in Object
+// for (const key in _custom_obj) {
+//     const _propsName = key; // key - props name
+//     const _propsValue = _custom_obj[key];
+//     console.log(_propsName + ': ' + _propsValue);
+// }
+// // for/of Array
+// for (const iterator of Object.keys(_custom_obj)) {
+//     console.log(iterator);
+// }
+
+for (const [key, value] of Object.entries(_custom_obj)) {
+    console.log(key + ' ' + value);
 }
-console.log(typeof (sumForOf));
-console.log(sumForOf);
+
+for (const iterator of Object.entries(_custom_obj)) {
+    console.table(iterator);
+}
