@@ -66,10 +66,21 @@ let _custom_obj = {
 //     console.log(iterator);
 // }
 
-for (const [key, value] of Object.entries(_custom_obj)) {
-    console.log(key + ' ' + value);
-}
+// for (const [key, value] of Object.entries(_custom_obj)) {
+//     console.log(key + ' ' + value);
+// }
 
-for (const iterator of Object.entries(_custom_obj)) {
-    console.table(iterator);
+// for (const iterator of Object.entries(_custom_obj)) {
+//     console.table(iterator);
+// }
+
+let _stringObj = {};
+for (const letter of 'object') {
+    if (_stringObj[letter]) {
+        _stringObj[letter]++;
+    }
+    else {
+        _stringObj[letter] = 1;
+    }
 }
+console.table(_stringObj);
