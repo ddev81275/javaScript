@@ -18,13 +18,26 @@
             return param + 10;
         }
     }
-    const meth = MethWithFuncParam();
-    const result1 = FuncInFunc(10);
-    const result2 = result1(1, 2);
+    // const meth = MethWithFuncParam();
+    // const result1 = FuncInFunc(10);
+    // const result2 = result1(1, 2);
     // let message = HelloMan();
     // const greetingByName = HelloByConstName("Tommy");
     // console.log(Sum2Nums());
     // console.log(Sum2Nums(one = 100, two = 100));
     // console.log(meth);
-    HelloByConstName("John");
+    // HelloByConstName("John");
+    // https://metanit.com/web/javascript/3.2.php intersting cases
+    function Outer() {
+        let number = 10;
+        function Inner() {
+            number++;
+            console.log(number);
+        };
+        return Inner;
+    }
+    let outer = Outer();
+    outer();
+    outer();
+    outer();
 }
